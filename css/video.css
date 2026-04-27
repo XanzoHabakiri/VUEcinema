@@ -1,0 +1,137 @@
+@import '../moon/style.css';
+*{
+    padding: 0;
+    margin: 0;
+}
+*::before{
+    font-family: 'icomoon';
+    color: white;
+}
+.content{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+}
+.content-container{
+    width: 640px;
+    height: 370px;
+    border: 1px solid yellow;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+.content-container__panel{
+    width: 100%;
+    height: 14%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 0;
+    padding: 10px 10px;
+}
+.panel-preveiw{
+    width: 100%;
+    height: 10px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    background: white;
+    position: relative;
+    border: 1px solid red;
+}
+.preveiw-video{
+    width: 100px;
+    height: 74px;
+    position: absolute;
+    bottom: 5px;
+    left: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transform: translateX(-50%);
+    /* padding-left:100px ; */
+}
+.preveiw{
+    width: 100%;
+}
+.preveiw-time{
+    font-family: 'Times New Roman';
+    font-size: 10px;
+    line-height: 11px;
+    font-weight: 400;
+}
+.panel-preweiw__line-current{
+    width: 50%;
+    height: 100%;
+    background: red;
+    position: absolute;
+    left: 0;
+}
+.panel-preveiw__line-range{
+    width: 101%;
+    -webkit-appearance: none;
+    background: none;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* border: 1px solid yellow; */
+}
+.panel-preveiw__line-range::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
+    background: red;
+    opacity: 0;
+    margin-top: -3px;
+}
+.panel-preveiw__line-range:hover::-webkit-slider-thumb{
+    opacity: 1;
+}
+.panel-preveiw__line-range::-webkit-slider-runnable-track{
+    height: 10px;
+    cursor: pointer;
+}
+.panel{
+    width: 50%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    /* border: 1px solid green; */
+}
+.panel button{
+    background: none;
+    border: none;
+    display: flex;
+}
+.btn-arr{
+    font-size: 25px;
+}
+.btn-up{
+    font-size: 20px;
+}
+.panel p{
+    font-size: 15px;
+}
+.player-speed{
+    outline: none;
+    background: #222222;
+    border: none;
+    color: white;
+}
+.right{
+    justify-content: flex-end;
+    column-gap: 10px;
+}
+.btn-scr{
+    font-size: 18px;
+}

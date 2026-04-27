@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/video.css">
+    <!-- <link rel="stylesheet" href="moon/style.css"> -->
+</head>
+<body class="wrapp">
+  <!-- navbar -->
+  <nav class="navbar">
+    <div class="navbar-nav container">
+      <a href="index.html" class="navbar-nav__logo">
+        <img src="images/logo.png" alt="">
+        <span>CINEMAS</span>
+      </a>
+      
+      <button class="navbar-nav__btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <ul class="navbar-nav__list">
+        <li><a href="#!">Films</a></li>
+        <li><a href="#!">Serials</a></li>
+        <li><a href="#!">Cartoons</a></li>
+        <li><a href="#!">Collections</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- navbar end -->
+  <section class="content">
+    <div class="content-container">
+      <video src="video/black-widow.mp4" class="content-container__video video" ></video>
+      <div class="content-container__panel">
+       <div class="panel-preveiw">
+        <div class="preveiw-video">
+          <video src="video/black-widow.mp4" class="preveiw"></video>
+          <p class="preveiw-time">00:00</p>
+        </div>
+        <div class="panel-preweiw__line-current"></div>
+        <input type="range" class="panel-preveiw__line-range" min="0" value="0" step="1">
+       </div>
+       <div class="panel left">
+        <button><span class="icon-play_arrow btn-arr"></span></button>
+        <button><span class="icon-volume_up btn-up"></span></button>
+        <input type="range" class="volume">
+        <p class="time-current">00:00</p>
+        <p class="time-range">02:50</p>
+       </div>
+       <div class="panel right">
+          <select class="player-speed">
+            <option value="0.25">0.25</option>
+            <option value="0.5">0.5</option>
+            <option value="1" selected>Обычная</option>
+            <option value="1.5">1.5</option>
+            <option value="2">2</option>
+          </select>
+          <button><span class="icon-fullscreen btn-scr"></span></button>
+       </div>
+      </div>
+    </div>
+  </section>
+<script src="js/main.js"></script>
+</body>
+</html>
