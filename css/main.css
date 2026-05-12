@@ -12,8 +12,7 @@
   --dark: 7, 15, 25;
   --film-bg: linear-gradient(180deg, rgba(241, 129, 40, 0.35) 0%, rgba(0, 0, 0, 0.71) 51.04%, rgba(var(--dark), 0.8) 100%);
   --time-bg: rgba(var(--dark), 0.2);
-  --deg-widow: 90deg;
-  --widow-bg: linear-gradient(var(--deg-widow), #DEF7FF 0%, #F4FCFF 45.64%, rgba(255, 255, 255, 0) 100.72%);
+  --widow-bg: linear-gradient(90deg, #DEF7FF 0%, #F4FCFF 45.64%, rgba(255, 255, 255, 0) 100.72%);
   --collection-bg:  linear-gradient(270deg, rgba(var(--dark), 0.56) 0%, rgba(49, 114, 9, 0.56) 100%);
   --serial-bg: linear-gradient(95.68deg, rgba(35, 35, 35, 0.8) 10.86%, rgba(11, 11, 11, 0.6) 110.86%);
   --footer-bg: linear-gradient(90deg, #FF8C30 0%, #9F4700 100%);
@@ -40,8 +39,8 @@
 }
 /* icons */
 *::before, *::after{
-    font-family: 'icomoon';
-    color: white;
+  font-family: 'icons';
+  color: var(--white);
 }
 .f300{font-weight: 300;}
 .f900{font-weight: 900; position: relative;}
@@ -76,6 +75,7 @@
 .banner span{
   font-size: 50px;
 }
+
 .banner p{
   font-size: 16px;
   line-height: 18px;
@@ -241,8 +241,8 @@
 .films{
   padding-top: 60px;
   padding-bottom: 77px;
+  z-index: -5;
   position: relative;
-  z-index: -1;
 }
 .films-items{
   width: 100%;
@@ -327,7 +327,7 @@
 .films-card:hover .time{
   transform: scale(0);
 }
-.films-card:hover .films-card__icon .icon-play{
+.films-card:hover .f900{
   transform: scale(2) translateY(50px);
 }
 /* premier */

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/main.css">
+    <!-- <link rel="stylesheet" href="css/main.css"> -->
     <link rel="stylesheet" href="css/video.css">
     <!-- <link rel="stylesheet" href="moon/style.css"> -->
 </head>
@@ -42,12 +42,12 @@
           <p class="preveiw-time">00:00</p>
         </div>
         <div class="panel-preweiw__line-current"></div>
-        <input type="range" class="panel-preveiw__line-range" min="0" value="0" step="1">
+        <input type="range" class="panel-preveiw__line-range" min="0" max="1000" value="0" step="1">
        </div>
        <div class="panel left">
         <button><span class="icon-play_arrow btn-arr"></span></button>
         <button><span class="icon-volume_up btn-up"></span></button>
-        <input type="range" class="volume">
+        <input type="range" class="volume" value="100" volume="100">
         <p class="time-current">00:00</p>
         <p class="time-range">02:50</p>
        </div>
