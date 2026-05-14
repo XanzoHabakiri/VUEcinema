@@ -60,7 +60,7 @@
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   min-height: 40px;
 }
 /* banner */
@@ -342,7 +342,7 @@
   justify-content: center;
   align-items: center;
   z-index: -1;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 .premier-video{
   position: absolute;
@@ -547,12 +547,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 .content-container{
     width: 640px;
     height: 370px;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -585,7 +585,7 @@
     /* align-items: center; */
     background: white;
     position: relative;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 .preveiw-video{
     width: 100px;
